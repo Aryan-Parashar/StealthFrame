@@ -1,5 +1,6 @@
 import cv2
 import os
+import getpass
 
 image_path = "C:/Users/aryan/OneDrive/Desktop/Steganography/Bhim.jpg"
 
@@ -14,7 +15,7 @@ if img is None:
     exit()
 
 while True:
-    access = input("Enter the access code: ")
+    access = getpass.getpass("Enter the access code: ")
 
     if access == "AByz110!":
         print("Access granted!")
@@ -43,22 +44,5 @@ for i in range(len(msg)):
     z = (z + 1) % 3
 
 cv2.imwrite("encryptedImage.jpg", img)
-os.startfile("encryptedImage.jpg")
+os.startfile("encryptedImage.jpg") 
 
-# Decryption
-message = ""
-n = 0
-m = 0
-z = 0
-
-pas = input("Enter Decryption Key")
-if pas == key:
-    for i in range(len(msg)):
-        message = message + c[img[n, m, z]]
-        n = (n + 1) % img.shape[0]
-        m = (m + 1) % img.shape[1]
-        z = (z + 1) % 3
-
-    print("Decrypted message is =", message)
-else:
-    print("You are not Authenticated")
