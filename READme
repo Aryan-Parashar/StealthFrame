@@ -1,0 +1,66 @@
+Steganography Project ReadMe
+Overview
+
+Welcome to the Steganography Project! This repository contains the code for a Python-based steganography application that allows you to hide and retrieve messages within images using a combination of encryption and SMTP for transfer.
+
+The project is divided into three main parts:
+    Encryption Code (encryption.py): This module is responsible for encrypting a given message and embedding it into an image file.
+    API Code (api.py): This module provides an API for sending the encrypted image via email using the SMTP protocol. It handles the communication between the sender and the recipient.
+    Decryption Code (decryption.py): This module is responsible for downloading the encrypted image from the email and decrypting the hidden message.
+
+Getting Started
+
+Follow these steps to get started with the Steganography Project:
+Prerequisites
+
+    Python 3.x
+    Required Python packages can be installed using the following command: bash
+
+    pip install -r requirements.txt
+
+Usage
+
+    Encryption:
+        Open encryption.py and modify the message variable with the text you want to hide.
+        Run the script:bash
+
+    python encryption.py
+
+API for Email Transfer:
+    Open api.py and configure the SMTP server settings and email credentials.
+    Run the script: bash
+
+    python api.py
+
+Decryption:
+
+    Open decryption.py and configure the email credentials for receiving the encrypted image.
+    Run the script:bash
+
+        python decryption.py
+
+Configuration
+
+In each script, there are configuration variables that you may need to customize:
+
+    encryption.py Configuration:
+        message: The text message you want to hide.
+        image_path: Path to the image file where the message will be hidden.
+
+    api.py Configuration:
+        SMTP server settings, including smtp_server, smtp_port, sender_email, and sender_password.
+        Recipient email address (recipient_email).
+
+    decryption.py Configuration:
+        Email credentials for receiving the encrypted image (email_address and email_password).
+
+Notes
+
+    Ensure that you comply with ethical considerations and legal regulations when using this tool.
+    The security of the steganography technique heavily depends on the encryption algorithm used; consider using strong encryption methods for sensitive information.
+
+License
+
+This project is licensed under the MIT License.
+
+Feel free to explore, experiment, and contribute to the project! If you encounter any issues or have suggestions, please open an issue in the repository.
