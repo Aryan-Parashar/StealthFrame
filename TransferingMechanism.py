@@ -34,7 +34,7 @@ def send_email(sender_email, sender_password, recipient_email, image_path):
 if __name__ == "__main__":
     
     sender_email = 'aryanmayoor@gmail.com'
-    sender_password = 'nczc nxlm djdu yexe'
+    sender_password = #enter your password
     recipient_email = 'aryan25ic011@satiengg.in'
     output_image_path = 'C:/Users/aryan/OneDrive/Desktop/Steganography/encryptedImage.jpg'
 
