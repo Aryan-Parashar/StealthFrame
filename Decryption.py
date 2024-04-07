@@ -30,7 +30,7 @@ def decrypt_message(image_path, decryption_key, secret_message):
         print("You are not Authenticated")
 
 if __name__ == "__main__":
-    image_path = "C:/Users/aryan/OneDrive/Desktop/Steganography/encryptedImage.jpg"
+    image_path = "C:/Users/aryan/OneDrive/Desktop/encryptedImage.jpg"
     decryption_key = input("Enter Decryption Key: ")
 
     # You need to provide the secret_message that was used during encryption
