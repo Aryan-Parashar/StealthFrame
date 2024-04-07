@@ -4,12 +4,12 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from email.mime.image import MIMEImage
 
-def execute_working_model():
+def execute_creation():
     try:
-        subprocess.run(['python','C:/Users/aryan/OneDrive/Desktop/Steganography/WorkingModel.py'], check=True)
-        print("WorkingModel.py executed successfully.")
+        subprocess.run(['python','C:/Users/aryan/Creation.py'], check=True)
+        print("Creation.py executed successfully.")
     except subprocess.CalledProcessError as e:
-        print(f"Error executing Working Model.py: {e}")
+        print(f"Error executing Creation.py: {e}")
 
 def send_email(sender_email, sender_password, recipient_email, image_path):
     
