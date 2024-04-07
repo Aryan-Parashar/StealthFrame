@@ -2,7 +2,7 @@ import cv2
 import os
 import getpass
 
-image_path = "C:/Users/aryan/OneDrive/Desktop/Steganography/Bhim.jpg"
+image_path = "C:/Users/aryan/image.jpg"
 
 if not os.path.isfile(image_path):
     print(f"Error: Image file '{image_path}' not found.")
